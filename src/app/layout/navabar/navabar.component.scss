@@ -5,20 +5,96 @@
     z-index: 8;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    // margin-left: 265px;
+    // width: calc(100% - 265px);
+    width: 100%;
+    .header-wrapper {
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5px 30px;
+        position: relative;
+        background-color: #ECF0F3;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+
+    .toggle-sidebar {
+        i {
+            font-size: 20px;
+            color: #aaa;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 44px;
+            width: 40px;
+            height: 40px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+        }
+        &:hover i {
+            color: #ffffff;
+            background-color: #1caee7;
+        }
+    }
+
+
+    .nav-logo {
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 900;
+        color: #058ece;
+    }
+    .menu-searchinput {
+        border-radius: 20px;
+        position: relative;
+        padding-left: 40px;
+        font-size: 13px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        &:focus{
+            outline: none;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+       
+    }
+    .search-icon{
+        position: absolute;
+        left: 18px;
+        z-index: 2;
+        top: 52%;
+        transform: translate(-28%, -49%);
+    }  
+        
   }
 
-.page-header .header-wrapper {
-    width: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 13px 30px;
-    position: relative;
-    background-color: #9c9696;
-}
-.nav-right .nav-menus li .input-show #searchInput input {
-   
-}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-right .nav-menus li .input-show input {
     position: absolute;
@@ -29,6 +105,11 @@
     background-color: #fff;
     padding: 12px;
 }
+
+
+
+
+
 @media only screen and (max-width: 991.98px){
 .page-header {
     margin-left: 0 !important;
