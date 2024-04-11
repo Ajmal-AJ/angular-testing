@@ -1,0 +1,103 @@
+.login-section {
+  height: 100vh;
+  background: url(../../assets/Rectangle\ 62.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+  }
+  .login_card {
+    max-width: 500px;
+    .login_card-body {
+      padding: 40px;
+    }
+  }
+  .login_card-header {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .login_form {
+    .login_form-label,
+    .login_form-control {
+      padding-left: 40px;
+      font-size: 14px;
+      &::after {
+        background-color: transparent;
+      }
+    }
+    .form-floating {
+      position: relative;
+
+      .form-icon {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .paswrd-visibilty {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .login_form-control {
+      border: 1px solid #695f5f;
+      background-color: #fff;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #489ad4
+      }
+    }
+    .remember-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #616072;
+    }
+    .forget_link {
+      font-size: 13px;
+      color: #0076CD;
+    }
+    .login-btn {
+      background-color: #00a2e3;
+      color: #fff;
+      padding: 15px;
+    }
+  }
+
+  .login_card-footer {
+    .signup_text {
+      font-size: 14px;
+      .signup_link {
+        font-weight: 600;
+        color: #0086d6;
+      }
+    }
+    .error-box {
+      background-color: #eee;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 0 0 10px 10px;
+
+      p {
+        margin-bottom: 0;
+        color: rgb(235, 34, 34);
+      }
+    }
+  }
+}
+
+// =====
+
+.login_form-control.ng-invalid.ng-touched{
+  border: 1px solid red !important;
+}

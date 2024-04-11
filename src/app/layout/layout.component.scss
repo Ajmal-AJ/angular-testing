@@ -1,0 +1,28 @@
+.page-body {
+    min-height: calc(100vh - 136px);
+    margin-top: 136px;
+    padding: 25px 15px;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #F5F5F5;
+  }
+
+ 
+
+  .sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    line-height: inherit;
+    background: var(--theme-deafult);
+    width: 265px;
+    text-align: left;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
+            box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
