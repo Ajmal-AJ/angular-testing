@@ -38,6 +38,12 @@
       }
       &:hover {
           border-left: 3px solid #0BB6F8;
+          .module-menu{
+            display: block;
+           
+          
+            inset: 0px auto auto 0px;
+          }
       }
   }
     .module-menu {
@@ -51,13 +57,12 @@
       min-width: 290px;
       max-width: 290px;
       flex-grow: 1;
-      overflow-y: auto;
-      overflow-x: hidden;
+     
       border: none;
-      background: #003144;
+      background: #003144 !important;
      
       &:hover {
-        display: flex;
+        display: block;
         inset: 0px auto auto 0px;
         
   
