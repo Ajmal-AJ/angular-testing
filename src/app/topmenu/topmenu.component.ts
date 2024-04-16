@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { TopmenuComponent } from '../topmenu/topmenu.component';
 
 @Component({
-  selector: 'app-navigation-bar',
+  selector: 'app-topmenu',
   standalone: true,
-  imports: [NavigationBarComponent,TopmenuComponent],
-  templateUrl: './navigation-bar.component.html',
-  styleUrls: ['./navigation-bar.component.scss',]
+  imports: [],
+  templateUrl: './topmenu.component.html',
+  styleUrl: './topmenu.component.scss'
 })
-export class NavigationBarComponent {
-  menustructue =
+export class TopmenuComponent {
+menustructue =
   {
     "RootMenus": [
       {
@@ -145,4 +144,9 @@ export class NavigationBarComponent {
       }
     ]
   }
+
 }
+
+
+
+

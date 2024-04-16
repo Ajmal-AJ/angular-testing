@@ -6,6 +6,7 @@
                  type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilesideMenu" aria-controls="mobilesideMenu"><i class="mobtoggle-icon bi bi-list"></i></button>
             </div>
         </div>
+
         <div class="col-lg-4 col-md-6 col-sm-5 d-lg-block d-md-block d-sm-block d-none">
             <div class="d-flex">
                 
@@ -22,6 +23,9 @@
 
           
         </div>
+
+      
+
         <div class="col-lg-5 col-md-3  col-sm-5 col-10">
             <ul class="mb-0 d-flex float-end align-items-center rightnavmenus">
                 <li class="nav-item"><a class="nav-link"><i class="nav-icon bi bi-bell"></i></a>
@@ -50,6 +54,7 @@
             </ul>
         </div>
         
+
     </div>
 
 </div>
@@ -106,53 +111,46 @@
                           </div>
 
                         </div>
+                        <div class="accordion-item submenu-item">
+                          
+                            <a class="accordion-button submenu-title" type="button" data-bs-toggle="collapse" data-bs-target="#leave" aria-expanded="true" aria-controls="leave">
+                            Leave
+                          </a>
+                         
 
-                        @for (data of menustructue.RootMenus; track $index; ) {
-                            <div class="accordion-item submenu-item">
-                                
-                                <a class="accordion-button submenu-title" type="button" 
-                                data-bs-toggle="collapse" attr.data-bs-target="#panelsStayOpen-{{$index}}{{data.MenuId}}" 
-                                aria-expanded="true" attr.aria-controls="panelsStayOpen-{{$index}}{{data.MenuId}}">
-                                <div class="rootmenu-text">{{data.Name}}</div>
-                            </a>
-                            
-                            
-                            <div id="panelsStayOpen-{{$index}}{{data.MenuId}}" class="accordion-collapse collapse show">
-                                @for (item of data.Submenus; track $index) {
-                                    <ul class="menulist-box">
-                                    <p class="parentmenu-text">{{item.Name}}</p> 
-                                    @for (item of item.Submenus; track $index) {
-                                        
-                                    <li class="menulist-item d-flex justify-content-between">
-                                        <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">{{item.Name}}</span> </a>
-                                        <div class="custom-links">
-                                            <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
-                                            <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
-    
-                                        </div>
-                                    </li>
-                                }
-    
-                                  
-                                </ul>
-                            }   
-                              </div>
-    
-                            </div>
-                        }
+                          <div id="leave" class="accordion-collapse collapse show">
+                            <ul class="menulist-box">
+                                <li class="menulist-item d-flex justify-content-between">
+                                    <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                    <div class="custom-links">
+                                        <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                        <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
 
+                                    </div>
+                                </li>
 
+                                <li class="menulist-item d-flex justify-content-between">
+                                    <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Return</span> </a>
+                                    <div class="custom-links">
+                                        <a class="favicon-bx"><i class="bi bi-heart lvtype-o"></i></a>
+                                        <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
 
+                                    </div>
+                                </li>
 
+                                <li class="menulist-item d-flex justify-content-between">
+                                    <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Encashment</span> </a>
+                                    <div class="custom-links">
+                                        <a class="favicon-bx"><i class="bi bi-heart lvtype-o"></i></a>
+                                        <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
 
+                                    </div>
+                                </li>
+                            </ul>
+                          </div>
 
-
-
-
-
-
-
-                        <!-- <div class="accordion-item submenu-item">
+                        </div>
+                        <div class="accordion-item submenu-item">
                           
                             <a class="accordion-button submenu-title" type="button" data-bs-toggle="collapse" data-bs-target="#loan" aria-expanded="true" aria-controls="loan">
                             Loan
@@ -224,7 +222,7 @@
                             </ul>
                           </div>
 
-                        </div> -->
+                        </div>
                       </div>
                 </ul>
             </li>

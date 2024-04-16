@@ -1,0 +1,264 @@
+
+
+
+<ul class="topmenus-wrapper d-lg-flex d-none">
+                
+    <li class="menu-item-has-children">
+        <a href="#"><i class="bi bi-list topmenu-icon"></i></a>
+        <div class="sub-menu mega-menuss mega-menu-column-4">
+            <div class="mega-menu modal-dialog-scrollable">
+                <div class="mega-menu-content">
+                    <div class="megamenu-body offcanvas-body">
+                        <ul class="ps-0 topmenu-accordion d-flex">
+                           
+                            <li>
+                                <div class="submenu-item" >
+
+                                    <a class="accordion-button submenu-title" data-bs-toggle="collapse" href="#collapseExample"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Favourites
+                                        </a>
+                                      
+                                       <div class="collapse show" id="collapseExample">
+                                        <ul class="menulist-box">
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon busnstype"></i>  <span class="menulink-text">Business Travel Plan</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon loantype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill loantype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="text-center border-top-1 viwemore-btnbox">
+                                            <a class="menu-viewmore-btn"> view More</a>
+                                        </div>
+                                      </div>
+
+                                </div>
+                                
+                               
+                            </li>
+                        
+                        
+                         @for (data of menustructue.RootMenus; track $index; ) {
+                            <li>
+                                <div class="submenu-item" >
+
+                                    <a class="accordion-button submenu-title" data-bs-toggle="collapse" href="#{{$index}}{{data.MenuId}}"
+                                    role="button" aria-expanded="false" attr.aria-controls="{{$index}}{{data.MenuId}}">
+                                    <div class="rootmenu-text">{{data.Name}}</div>
+                                        </a>
+                                      
+                                       <div class="collapse show" id="{{$index}}{{data.MenuId}}">
+                                           <ul class="menulist-box">
+                                            @for (item of data.Submenus; track $index) {
+                                                <p class="parentmenu-text">{{item.Name}}</p> 
+                                            @for (item of item.Submenus; track $index) {
+                                            <li class="menulist-item d-flex justify-content-between">
+
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">{{item.Name}}</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+                                        }
+                                            <!-- <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon busnstype"></i>  <span class="menulink-text">Business Travel Plan</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon loantype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill loantype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li> -->
+                                        }
+                                        </ul>
+                                        <!-- <div class="text-center border-top-1 viwemore-btnbox">
+                                            <a class="menu-viewmore-btn"> view More</a>
+                                        </div> -->
+                                      </div>
+
+                                </div>
+                                
+                               
+                            </li>
+
+                        }
+
+
+
+                            <!-- <li >
+                                <div class="submenu-item" >
+
+                                    <a class="accordion-button submenu-title" data-bs-toggle="collapse" href="#collapse3"
+                                    role="button" aria-expanded="false" aria-controls="collapse3">
+                                        Favourites
+                                        </a>
+                                      
+                                       <div class="collapse show" id="collapse3">
+                                        <ul class="menulist-box">
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon busnstype"></i>  <span class="menulink-text">Business Travel Plan</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                           
+                                        </ul>
+                                        <div class="text-center border-top-1 viwemore-btnbox">
+                                            <a class="menu-viewmore-btn"> view More</a>
+                                        </div>
+                                      </div>
+
+                                </div>
+                                
+                               
+                            </li>
+                            <li>
+                                <div class="submenu-item" >
+
+                                    <a class="accordion-button submenu-title" data-bs-toggle="collapse" href="#collapse4"
+                                    role="button" aria-expanded="false" aria-controls="collapse4">
+                                        Favourites
+                                        </a>
+                                      
+                                       <div class="collapse show" id="collapse4">
+                                        <ul class="menulist-box">
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon busnstype"></i>  <span class="menulink-text">Business Travel Plan</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon loantype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill loantype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="text-center border-top-1 viwemore-btnbox">
+                                            <a class="menu-viewmore-btn"> view More</a>
+                                        </div>
+                                      </div>
+
+                                </div>
+                                
+                               
+                            </li>
+                            <li>
+                                <div class="submenu-item" >
+
+                                    <a class="accordion-button submenu-title" data-bs-toggle="collapse" href="#collapse5"
+                                    role="button" aria-expanded="false" aria-controls="collapse5">
+                                        Favourites
+                                        </a>
+                                      
+                                       <div class="collapse show" id="collapse5">
+                                        <ul class="menulist-box">
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon busnstype"></i>  <span class="menulink-text">Business Travel Plan</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+    
+                                            <li class="menulist-item d-flex justify-content-between">
+                                                <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon loantype"></i>  <span class="menulink-text">Leave Application</span> </a>
+                                                <div class="custom-links">
+                                                    <a class="favicon-bx"><i class="bi bi-heart-fill loantype-o"></i></a>
+                                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="text-center border-top-1 viwemore-btnbox">
+                                            <a class="menu-viewmore-btn"> view More</a>
+                                        </div>
+                                      </div>
+
+                                </div>
+                            </li> -->
+                        </ul>
+                      </div>
+                </div>
+              
+
+
+
+            </div>
+        </div>
+    </li>
+
+
+
+<!-- <li class="menu-item-has-children">
+    <a href="#"><i class="bi bi-grid topmenu-icon"></i></a>
+</li> -->
+</ul>
