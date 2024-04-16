@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { TopmenuComponent } from '../topmenu/topmenu.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-navigation-bar',
   standalone: true,
-  imports: [NavigationBarComponent,TopmenuComponent],
+  imports: [NavigationBarComponent,TopmenuComponent,SidebarComponent],
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.scss',]
 })

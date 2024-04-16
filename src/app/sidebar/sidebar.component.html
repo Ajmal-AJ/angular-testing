@@ -1,125 +1,120 @@
-<div class="sidebar-wrapper">
-    <div class="logo-wrapper text-center ">
-        <a href="#" class="brand-logo">HR</a>
-    </div>
-    
+<ul class="nav">
+    <!-- All menu  -->
+    <li class="nav-item mainmenu-item dropend">
+        <a class="nav-link" type="button" class="dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="bi bi-list sidemenu-icon"></i></a>
+        <ul class="dropdown-menu module-menu offcanvas-body">
+            <div class="accordion" id="sidebarSubmenuContainer">
+                <!-- --favorite module  -->
+                <div class="accordion-item submenu-item">
+                    <a class="accordion-button submenu-title" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-favourite" aria-expanded="true"
+                        aria-controls="panelsStayOpen-favourite">
+                        Favourites
+                    </a>
 
-    <div class="sidemenu-wrapper">
-        <ul class="nav">
-
-            <!-- All menu  -->
-            <li class="nav-item mainmenu-item dropend "> 
-                <a  class="nav-link" type="button" class="btn  dropdown-toggle-split " data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list sidemenu-icon"></i></a>
-                <ul class="dropdown-menu module-menu offcanvas-body">
-                    <div class="accordion" id="sidebarSubmenuContainer">
-                        <!-- --favorite module  -->
-                        <div class="accordion-item submenu-item">
-                            
-                            <a class="accordion-button submenu-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-favourite" aria-expanded="true" aria-controls="panelsStayOpen-favourite">
-                                Favourites
-                            </a>
-                            
-                            
-                            <div id="panelsStayOpen-favourite" class="accordion-collapse collapse show">
-                                <ul class="menulist-box">
-                                    
-                                    <li class="menulist-item d-flex justify-content-between">
-                                        <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">Leave Application</span> </a>
-                                        <div class="custom-links">
-                                            <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
-                                            <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
-                                            
-                                        </div>
-                                    </li>
-                                    
-                                    <li class="menulist-item d-flex justify-content-between">
-                                        <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon busnstype"></i>  <span class="menulink-text">Business Travel Plan</span> </a>
-                                        <div class="custom-links">
-                                            <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
-                                            <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
-                                            
-                                        </div>
-                                    </li>
-                                    
-                                    <li class="menulist-item d-flex justify-content-between">
-                                        <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon loantype"></i>  <span class="menulink-text">Leave Application</span> </a>
-                                        <div class="custom-links">
-                                            <a class="favicon-bx"><i class="bi bi-heart-fill loantype-o"></i></a>
-                                            <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
-                                            
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text-center border-top-1 viwemore-btnbox">
-                                    <a class="menu-viewmore-btn"> view More</a>
+                    <div id="panelsStayOpen-favourite" class="accordion-collapse collapse show">
+                        <ul class="menulist-box">
+                            <li class="menulist-item d-flex justify-content-between">
+                                <a class="d-flex menulist-link">
+                                    <i class="bi bi-card-checklist menulist-icon lvtype"></i>
+                                    <span class="menulink-text">Leave Application</span>
+                                </a>
+                                <div class="custom-links">
+                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
                                 </div>
-                            </div>
-                            
-                        </div>
-                      
-                            
-                            
-                            <div class="accordion-item submenu-item">
-                                
-                                <a class="accordion-button submenu-title" type="button" 
-                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-$indexdata.MenuId" 
-                                aria-expanded="true" aria-controls="panelsStayOpen-$indexdata.MenuId">
-                                <div class="rootmenu-text">Name</div>
-                            </a>
-                            
-                            
-                            <div id="panelsStayOpen-$indexdata.MenuId" class="accordion-collapse collapse show">
-                               
-                                    <ul class="menulist-box">
-                                    <p class="parentmenu-text">item.Name</p> 
-                                   
-                                        
-                                    <li class="menulist-item d-flex justify-content-between">
-                                        <a  class="d-flex menulist-link"> <i class="bi bi-card-checklist menulist-icon lvtype"></i>  <span class="menulink-text">item.Name</span> </a>
-                                        <div class="custom-links">
-                                            <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
-                                            <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
-    
-                                        </div>
-                                    </li>
-                                
-    
-                                  
-                                </ul>
-                             
-                              </div>
-    
-                            </div>
-                        
-                    </div>
-                          
-                </ul>               
-            </li>
-            <!-- All menu End  -->
-
-            <!-- --- Module Menus  -->
-             
-            <li class="nav-item mainmenu-item dropend">
-                <a  class="nav-link" type="button" class="btn  dropdown-toggle-split " data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-grid sidemenu-icon"></i></a>
-                
-                <ul class="dropdown-menu">
-                    <h6 class="title">item.Name</h6>
-                        
-                            <li>
-                                <a href="" class="dropdown-item">item.Name</a>
                             </li>
 
-                      
-                      
-                    </ul>
-                    
-                
-            </li>
-            
+                            <li class="menulist-item d-flex justify-content-between">
+                                <a class="d-flex menulist-link">
+                                    <i class="bi bi-card-checklist menulist-icon busnstype"></i>
+                                    <span class="menulink-text">Business Travel Plan</span>
+                                </a>
+                                <div class="custom-links">
+                                    <a class="favicon-bx"><i class="bi bi-heart-fill busnstype-o"></i></a>
+                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                            </li>
 
-            <!-- Module Menus end -->
+                            <li class="menulist-item d-flex justify-content-between">
+                                <a class="d-flex menulist-link">
+                                    <i class="bi bi-card-checklist menulist-icon loantype"></i>
+                                    <span class="menulink-text">Leave Application</span>
+                                </a>
+                                <div class="custom-links">
+                                    <a class="favicon-bx"><i class="bi bi-heart-fill loantype-o"></i></a>
+                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="text-center border-top-1 viwemore-btnbox">
+                            <a class="menu-viewmore-btn"> view More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- --favorite module End -->
+
+                @for (data of menustructue.RootMenus; track $index; ) {
+
+                <div class="accordion-item submenu-item">
+                    <a class="accordion-button submenu-title" type="button" data-bs-toggle="collapse"
+                        attr.data-bs-target="#panelsStayOpen-{{ $index }}{{ data.MenuId }}" aria-expanded="true"
+                        attr.aria-controls="panelsStayOpen-{{ $index }}{{ data.MenuId }}">
+                        <div class="rootmenu-text">{{ data.Name }}</div>
+                    </a>
+
+                    <div id="panelsStayOpen-{{ $index }}{{ data.MenuId }}" class="accordion-collapse collapse show">
+                        @for (item of data.Submenus; track $index) {
+                        <ul class="menulist-box">
+                            <p class="parentmenu-text">{{ item.Name }}</p>
+                            @for (item of item.Submenus; track $index) {
+
+                            <li class="menulist-item d-flex justify-content-between">
+                                <a class="d-flex menulist-link">
+                                    <i class="bi bi-card-checklist menulist-icon lvtype"></i>
+                                    <span class="menulink-text">{{ item.Name }}</span>
+                                </a>
+                                <div class="custom-links">
+                                    <a class="favicon-bx"><i class="bi bi-heart-fill lvtype-o"></i></a>
+                                    <a class="text-white"><i class="bi bi-three-dots-vertical"></i></a>
+                                </div>
+                            </li>
+                            }
+                        </ul>
+                        }
+                    </div>
+                </div>
+                }
+            </div>
         </ul>
-    </div>
+    </li>
+    <!-- All menu End  -->
 
+    <!-- --- Module Menus  -->
 
-</div>
+    <li class="nav-item mainmenu-item has_module-menu dropend">
+        <a class="nav-link" type="button" class="dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="bi bi-grid sidemenu-icon"></i></a>
+
+        <ul class="dropdown-menu child_dropdown-menu">
+            <h6 class="child_dropdown-title">Leave</h6>
+        
+                <li class="child_menu-item">
+                    <a  class="child_menu-link"> <i class="bi bi-piggy-bank child_menu-icon lvtype"></i>Application</a>
+                </li>
+
+                <li class="child_menu-item">
+                    <a  class="child_menu-link"> <i class="bi bi-piggy-bank child_menu-icon lvtype"></i>Application</a>
+                </li>
+
+                <li class="child_menu-item">
+                    <a  class="child_menu-link"> <i class="bi bi-piggy-bank child_menu-icon lvtype"></i>Application</a>
+                </li>
+
+         
+        </ul>
+    </li>
+
+    <!-- Module Menus end -->
+</ul>
