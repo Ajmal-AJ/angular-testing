@@ -40,3 +40,15 @@ use in html
 # ReactiveForm Module 
 
 - import reactiveformmodule
+
+
+
+
+================================================
+
+# gridster2 installation 
+
+
+npm i angular-gridster2
+
+
