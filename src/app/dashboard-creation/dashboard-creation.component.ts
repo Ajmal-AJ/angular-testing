@@ -3,7 +3,7 @@ import { CarouselModule ,OwlOptions } from 'ngx-owl-carousel-o';
 import {GridType, GridsterComponent, GridsterItemComponent,CompactType,GridsterPush} from 'angular-gridster2';
 import { CommonModule } from '@angular/common';
 import { GridsterConfig, GridsterItem ,DisplayGrid,}  from 'angular-gridster2';
-
+import { GridStack } from 'gridstack';
 @Component({
   selector: 'app-dashboard-creation',
   standalone: true,
@@ -121,5 +121,26 @@ export class DashboardCreationComponent implements OnInit{
   scrollPrevious() {
     this.cataSubNav.nativeElement.scrollLeft -= 460;
     behavior: 'smooth' // Smooth scrolling animation
+  }
+
+
+
+
+  grid1 !: GridStack;
+  ngAfterViewInit(): void {
+    const options = {
+      column: 6,
+      minRow: 1, // don't collapse when empty
+      cellHeight: 70,
+      disableOneColumnMode: true,
+      float: false,
+      // dragIn: '.sidebar .grid-stack-item', // add draggable to class
+      // dragInOptions: { revert: 'invalid', scroll: false, appendTo: 'body', helper: 'clone' }, // clone
+      removable: '.trash', // true or drag-out delete class
+      acceptWidgets: function(el: any) {
+        return true;
+      } // function example, but can also be: true | false | '.someClass' value
+    };
+  
   }
 }
